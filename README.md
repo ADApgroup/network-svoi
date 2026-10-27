@@ -22,6 +22,7 @@
 ```
 python3 _src/build.py                 # пересобрать *.html
 python3 _src/build.py --artifact DIR  # плюс копия для превью на claude.ai
+python3 _src/bundle.py OUT.html       # весь сайт одним файлом, чтобы переслать
 ```
 
 Тексты лежат в `_src/content.py`, вёрстка страниц в `_src/build.py`, стили и скрипты в `assets/`. Точки суши на карте (`_src/land-dots.json`) посчитаны из world-atlas 2.0.2 (Natural Earth, public domain).

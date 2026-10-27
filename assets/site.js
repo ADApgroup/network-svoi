@@ -11,7 +11,7 @@
       btn.textContent = open ? "Закрыть" : "Меню";
       document.body.style.overflow = open ? "hidden" : "";
     });
-    nav.addEventListener("click", function(e){ if (e.target.closest("a")) { nav.classList.remove("open"); document.body.style.overflow = ""; } });
+    nav.addEventListener("click", function(e){ if (e.target.closest("a")) { nav.classList.remove("open"); btn.setAttribute("aria-expanded", "false"); btn.textContent = "Меню"; document.body.style.overflow = ""; } });
   }
 
   // Мягкое появление только для того, что ниже первого экрана
